@@ -77,9 +77,13 @@ WSGI_APPLICATION = 'RECRUITMENT.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    'default':  {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'railway',       # Replace with your database name the one inside postgres 
+        'USER': 'postgres',       # Replace with your PostgreSQL database user
+        'PASSWORD': 'Ca-edb336b-3dA*3-Gb611eaA4dDFceG', # Replace with your PostgreSQL database password
+        'HOST': 'roundhouse.proxy.rlwy.net',                      # Replace with your PostgreSQL host
+        'PORT': '59334',                               # Leave empty to use the default PostgreSQL port (5432)
     }
 }
 
